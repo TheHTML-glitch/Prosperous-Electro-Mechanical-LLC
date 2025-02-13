@@ -7,106 +7,84 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
-            background-image: url('https://previews.123rf.com/images/maralingstad/maralingstad1511/maralingstad151101520/48355040-vector-classic-blueprint-of-tailor-pin-icon-on-engineer-and-architect-background.jpg');
+            background-image: url('https://previews.123rf.com/images/maralingstad/maralingstad1511/maralingstad151101520/48355040-vector-classic');
             background-size: cover;
             background-position: center;
             color: white;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        header {
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.6);
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+            margin: 20px 0;
         }
 
         header h1 {
-            font-size: 60px;
+            font-size: 50px;
             text-align: center;
             color: black;
-            margin: 0;
-            padding: 0;
+            margin: 20px 0;
         }
 
         .llc {
             color: darkgoldenrod;
         }
 
-
         .section h2 {
-            font-size: 36px;
+            font-size: 28px;
             color: yellow;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 15px;
         }
 
-        .section p {
-            font-size: 20px;
+        .section p, .section ul, .section ol {
+            font-size: 18px;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
+            text-align: justify;
         }
 
-        .section ul {
-            text-align: left;
-            list-style-type: square;
-            font-size: 20px;
-            margin: 20px auto;
+        .section ul, .section ol {
             padding-left: 40px;
-            max-width: 800px;
         }
 
         .members {
             display: flex;
-            justify-content: space-evenly;
-            margin-top: 60px;
+            justify-content: space-between;
+            gap: 20px;
         }
 
         .member-box {
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 12px;
-            width: 30%;
-            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
             text-align: center;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-            font-size: 18px;
+            flex: 1;
         }
 
         .member-box h3 {
-            font-size: 28px;
+            font-size: 24px;
             color: yellow;
-            margin-bottom: 20px;
-        }
-
-        .member-box p {
-            color: white;
-            font-size: 20px;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.9);
-            margin-top: 40px;
         }
 
         .contact-info {
-            background-color: black;
-            padding: 25px;
-            color: white;
-            font-size: 20px;
             text-align: center;
-            margin-top: 30px;
+            background-color: black;
+            padding: 15px;
+            font-size: 18px;
         }
 
         .contact-info a {
             color: yellow;
             text-decoration: none;
-            font-weight: bold;
         }
 
         .contact-info a:hover {
@@ -120,66 +98,62 @@
     <h1>Prosperous Electro Mechanical <span class="llc">LLC</span></h1>
 </header>
 
-<div class="section intro">
-    <h2>Welcome to Prosperous Electro Mechanical LLC!</h2>
-    <p>At Prosperous Electro Mechanical LLC, we provide innovative, reliable, and efficient electro-mechanical solutions to meet the growing demands of the industrial sector. With a focus on engineering excellence, we specialize in delivering high-quality mechanical systems that integrate seamlessly with electrical components, ensuring superior performance and durability. Our experienced team of professionals is committed to providing unparalleled expertise and cutting-edge technology to every project we undertake.</p>
-</div>
-
-<div class="section features">
-    <h2>Features</h2>
-    <ul>
-        <li><strong>Comprehensive Engineering Services:</strong> We provide end-to-end solutions, from conceptual design to installation and ongoing support, ensuring complete satisfaction at every stage.</li>
-        <li><strong>Customized Mechanical Systems:</strong> Our team works closely with clients to design systems that are tailor-made to meet specific needs, ensuring both efficiency and cost-effectiveness.</li>
-        <li><strong>State-of-the-Art Technology:</strong> Utilizing the latest advancements in mechanical and electrical engineering, we offer solutions that are both innovative and forward-thinking.</li>
-        <li><strong>Highly Skilled Workforce:</strong> Our engineers and technicians possess extensive experience and a deep understanding of electro-mechanical systems, enabling them to tackle even the most complex projects.</li>
-    </ul>
-</div>
-
-<div class="section advantages">
-    <h2>Advantages</h2>
-    <ul>
-        <li><strong>Proven Track Record:</strong> With a portfolio of successful projects across a wide range of industries, our company has established a reputation for delivering results that exceed expectations.</li>
-        <li><strong>Cost-Effective Solutions:</strong> We focus on providing affordable solutions without compromising on quality, ensuring clients achieve the best value for their investment.</li>
-        <li><strong>Environmental Responsibility:</strong> As part of our commitment to sustainability, we design systems that promote energy efficiency and reduce environmental impact.</li>
-        <li><strong>Reliable Post-Project Support:</strong> Our service doesn't end at project completion; we offer ongoing maintenance, troubleshooting, and support services to ensure your systems operate at peak performance.</li>
-    </ul>
-</div>
-
-<div class="section how-it-works">
-    <h2>How It Works</h2>
-    <p>Our approach is designed to be transparent, structured, and client-centered. We aim to make every step of the process seamless and clear to our clients. Here's a breakdown of how we work:</p>
-    <ol>
-        <li><strong>Consultation and Analysis:</strong> We begin by thoroughly understanding your unique requirements and objectives, analyzing your project needs in detail. Our team will assess your goals and challenges to provide the most suitable solutions.</li>
-        <li><strong>Design and Engineering:</strong> Our engineering team develops customized designs based on the consultation phase. We focus on functionality, efficiency, and scalability to ensure the system meets both short- and long-term goals.</li>
-        <li><strong>Implementation and Installation:</strong> With precise planning, we proceed with the installation of systems, ensuring they are implemented on time and with minimal disruption to your ongoing operations.</li>
-        <li><strong>Ongoing Support and Maintenance:</strong> After installation, we offer continuous support, including regular maintenance, system upgrades, and troubleshooting, ensuring the longevity and optimal performance of your systems.</li>
-    </ol>
-</div>
-
-<div class="section location">
-    <h2>Our Location</h2>
-    <p>Prosperous Electro Mechanical LLC is headquartered in the heart of Abu Dhabi, UAE. From our base in this thriving metropolis, we serve clients across the UAE and beyond, delivering innovative solutions to industries ranging from manufacturing to construction and beyond. We are dedicated to contributing to the UAE’s vision of a sustainable, high-tech future.</p>
-</div>
-
-<div class="members">
-    <div class="member-box">
-        <h3><b>Sreehari</b></h3>
-        <p>Sreehari serves as the Project Manager at Prosperous Electro Mechanical LLC, bringing years of invaluable experience in managing and overseeing complex mechanical and electrical projects. Known for his technical acumen, Sreehari excels at coordinating multifaceted teams and ensuring that projects are completed on schedule, within budget, and to the highest standards. His leadership ensures that every project delivers exceptional results, making him a key asset to our company.</p>
+<div class="container">
+    <div class="section intro">
+        <h2>Welcome to Prosperous Electro Mechanical LLC!</h2>
+        <p>We provide innovative, reliable, and efficient electro-mechanical solutions. Our team specializes in mechanical systems integrated with electrical components to ensure superior performance and durability. With years of expertise, we deliver high-quality engineering services tailored to our clients’ needs.</p>
     </div>
 
-    <div class="member-box">
-        <h3><b>Jecon</b></h3>
-        <p>Jecon is a highly skilled partner at Prosperous Electro Mechanical LLC, with extensive expertise in both mechanical engineering and business operations. With a passion for innovation and efficiency, Jecon plays a crucial role in shaping the company’s strategic direction. His technical leadership and vision for growth have been instrumental in expanding our services and ensuring that we consistently meet client expectations. His ability to identify and implement industry-leading solutions sets him apart as an invaluable member of the team.</p>
+    <div class="section features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Comprehensive Engineering:</strong> From design to installation and maintenance.</li>
+            <li><strong>Customized Solutions:</strong> Tailored services for every client.</li>
+            <li><strong>Advanced Technology:</strong> Cutting-edge equipment and software.</li>
+            <li><strong>Experienced Workforce:</strong> Highly skilled engineers and technicians.</li>
+        </ul>
+    </div>
+
+    <div class="section advantages">
+        <h2>Advantages</h2>
+        <ul>
+            <li><strong>Proven Expertise:</strong> A track record of successful projects.</li>
+            <li><strong>Cost-Effective Solutions:</strong> High-quality services at competitive prices.</li>
+            <li><strong>Sustainable Practices:</strong> Energy-efficient and environmentally friendly.</li>
+            <li><strong>Reliable Support:</strong> Post-installation maintenance and troubleshooting.</li>
+        </ul>
+    </div>
+
+    <div class="section how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Consultation:</strong> Understanding project needs and requirements.</li>
+            <li><strong>Design & Planning:</strong> Developing customized engineering solutions.</li>
+            <li><strong>Implementation:</strong> Executing projects with precision and efficiency.</li>
+            <li><strong>Support & Maintenance:</strong> Ongoing services for long-term reliability.</li>
+        </ol>
+    </div>
+
+    <div class="section location">
+        <h2>Our Location</h2>
+        <p>We are headquartered in Abu Dhabi, UAE, serving clients across various industries with world-class electro-mechanical solutions.</p>
+    </div>
+
+    <div class="section members">
+        <div class="member-box">
+            <h3><b>Sreehari</b></h3>
+            <p>Project Manager with extensive experience in electro-mechanical engineering. Leads projects with precision, ensuring top-quality execution and client satisfaction.</p>
+        </div>
+
+        <div class="member-box">
+            <h3><b>Jecon</b></h3>
+            <p>Partner and strategic leader. Brings expertise in business operations and technical management, driving innovation and efficiency in every project.</p>
+        </div>
     </div>
 </div>
-
-<footer>
-    <p>&copy; 2025 Prosperous Electro Mechanical LLC. All Rights Reserved.</p>
-</footer>
 
 <div class="contact-info">
-    <p>For more information, please contact:</p>
-    <p><a href="mailto:sreehari0209@gmail.com">sreehari0209@gmail.com</a> or call <a href="tel:+971553349066">0553349066</a></p>
+    <p>For more information, contact: <a href="mailto:sreehari0209@gmail.com">sreehari0209@gmail.com</a> | Phone: <a href="tel:+971553349066">0553349066</a></p>
 </div>
 
 </body>
