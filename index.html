@@ -7,25 +7,16 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
-            background-image: url('https://previews.123rf.com/images/maralingstad/maralingstad1511/maralingstad151101520/48355040-vector-classic');
+            background-image: url('https://previews.123rf.com/images/maralingstad/maralingstad1511/maralingstad151101520/48355040-vector-classic-blueprint-of-tailor-pin-icon-on-engineer-and-architect-background.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1000px;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-            margin: 20px 0;
         }
 
         header h1 {
@@ -37,6 +28,16 @@
 
         .llc {
             color: darkgoldenrod;
+        }
+
+        .section {
+            width: 80%;
+            max-width: 900px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
         }
 
         .section h2 {
@@ -58,16 +59,17 @@
 
         .members {
             display: flex;
-            justify-content: space-between;
             gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .member-box {
+            width: 45%;
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 8px;
             text-align: center;
-            flex: 1;
         }
 
         .member-box h3 {
@@ -76,10 +78,13 @@
         }
 
         .contact-info {
+            width: 80%;
+            max-width: 900px;
             text-align: center;
             background-color: black;
             padding: 15px;
             font-size: 18px;
+            border-radius: 8px;
         }
 
         .contact-info a {
@@ -98,57 +103,55 @@
     <h1>Prosperous Electro Mechanical <span class="llc">LLC</span></h1>
 </header>
 
-<div class="container">
-    <div class="section intro">
-        <h2>Welcome to Prosperous Electro Mechanical LLC!</h2>
-        <p>We provide innovative, reliable, and efficient electro-mechanical solutions. Our team specializes in mechanical systems integrated with electrical components to ensure superior performance and durability. With years of expertise, we deliver high-quality engineering services tailored to our clients’ needs.</p>
+<div class="section">
+    <h2>Welcome to Prosperous Electro Mechanical LLC!</h2>
+    <p>We provide innovative, reliable, and efficient electro-mechanical solutions. Our team specializes in mechanical systems integrated with electrical components to ensure superior performance and durability. With years of expertise, we deliver high-quality engineering services tailored to our clients’ needs.</p>
+</div>
+
+<div class="section">
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Comprehensive Engineering:</strong> From design to installation and maintenance.</li>
+        <li><strong>Customized Solutions:</strong> Tailored services for every client.</li>
+        <li><strong>Advanced Technology:</strong> Cutting-edge equipment and software.</li>
+        <li><strong>Experienced Workforce:</strong> Highly skilled engineers and technicians.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Advantages</h2>
+    <ul>
+        <li><strong>Proven Expertise:</strong> A track record of successful projects.</li>
+        <li><strong>Cost-Effective Solutions:</strong> High-quality services at competitive prices.</li>
+        <li><strong>Sustainable Practices:</strong> Energy-efficient and environmentally friendly.</li>
+        <li><strong>Reliable Support:</strong> Post-installation maintenance and troubleshooting.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>How It Works</h2>
+    <ol>
+        <li><strong>Consultation:</strong> Understanding project needs and requirements.</li>
+        <li><strong>Design & Planning:</strong> Developing customized engineering solutions.</li>
+        <li><strong>Implementation:</strong> Executing projects with precision and efficiency.</li>
+        <li><strong>Support & Maintenance:</strong> Ongoing services for long-term reliability.</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Our Location</h2>
+    <p>We are headquartered in Abu Dhabi, UAE, serving clients across various industries with world-class electro-mechanical solutions.</p>
+</div>
+
+<div class="section members">
+    <div class="member-box">
+        <h3><b>Sreehari</b></h3>
+        <p>Project Manager with extensive experience in electro-mechanical engineering. Leads projects with precision, ensuring top-quality execution and client satisfaction.</p>
     </div>
 
-    <div class="section features">
-        <h2>Features</h2>
-        <ul>
-            <li><strong>Comprehensive Engineering:</strong> From design to installation and maintenance.</li>
-            <li><strong>Customized Solutions:</strong> Tailored services for every client.</li>
-            <li><strong>Advanced Technology:</strong> Cutting-edge equipment and software.</li>
-            <li><strong>Experienced Workforce:</strong> Highly skilled engineers and technicians.</li>
-        </ul>
-    </div>
-
-    <div class="section advantages">
-        <h2>Advantages</h2>
-        <ul>
-            <li><strong>Proven Expertise:</strong> A track record of successful projects.</li>
-            <li><strong>Cost-Effective Solutions:</strong> High-quality services at competitive prices.</li>
-            <li><strong>Sustainable Practices:</strong> Energy-efficient and environmentally friendly.</li>
-            <li><strong>Reliable Support:</strong> Post-installation maintenance and troubleshooting.</li>
-        </ul>
-    </div>
-
-    <div class="section how-it-works">
-        <h2>How It Works</h2>
-        <ol>
-            <li><strong>Consultation:</strong> Understanding project needs and requirements.</li>
-            <li><strong>Design & Planning:</strong> Developing customized engineering solutions.</li>
-            <li><strong>Implementation:</strong> Executing projects with precision and efficiency.</li>
-            <li><strong>Support & Maintenance:</strong> Ongoing services for long-term reliability.</li>
-        </ol>
-    </div>
-
-    <div class="section location">
-        <h2>Our Location</h2>
-        <p>We are headquartered in Abu Dhabi, UAE, serving clients across various industries with world-class electro-mechanical solutions.</p>
-    </div>
-
-    <div class="section members">
-        <div class="member-box">
-            <h3><b>Sreehari</b></h3>
-            <p>Project Manager with extensive experience in electro-mechanical engineering. Leads projects with precision, ensuring top-quality execution and client satisfaction.</p>
-        </div>
-
-        <div class="member-box">
-            <h3><b>Jecon</b></h3>
-            <p>Partner and strategic leader. Brings expertise in business operations and technical management, driving innovation and efficiency in every project.</p>
-        </div>
+    <div class="member-box">
+        <h3><b>Jecon</b></h3>
+        <p>Partner and strategic leader. Brings expertise in business operations and technical management, driving innovation and efficiency in every project.</p>
     </div>
 </div>
 
